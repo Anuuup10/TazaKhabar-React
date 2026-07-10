@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 2841,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Emily Herbert - BBC Sport, London and South East",
+      "title": "Middlesex appoint Harrington as interim CEO",
+      "description": "Middlesex announce the appointment of Julie Harrington as the club's interim chief executive officer.",
+      "url": "https://www.bbc.com/sport/cricket/articles/cdej0gg1z6no?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D",
+      "urlToImage": "https://s.yimg.com/lo/mysterio/api/e109aa6867a1db3732d0612637d0b7e799fc57a04fe872b938b65f068529101f/lightyear_networkapi/resizefill_w1010_h568;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2Fd2237ffb90de807263e0997cbef51ddd",
+      "publishedAt": "2026-07-09T16:09:34Z",
+      "content": "Middlesex have announced the appointment of Julie Harrington as the county's interim chief executive officer.\r\nHarrington, the former CEO of British Cycling and the British Horseracing Authority, sai… [+841 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "Emily Herbert",
+      "title": "Middlesex appoint Harrington as interim CEO",
+      "description": "Middlesex announce the appointment of Julie Harrington as the club's interim chief executive officer.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/cdej0gg1z6no",
+      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/f0b3/live/18442f80-7ba8-11f1-a6ff-fb376e90e96d.jpg",
+      "publishedAt": "2026-07-09T16:09:29Z",
+      "content": "Middlesex have announced the appointment of Julie Harrington as the county's interim chief executive officer.\r\nHarrington, the former CEO of British Cycling and the British Horseracing Authority, sai… [+852 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "The Times Of India",
+      "title": "MSMEs are 2nd backbone of India’s economic growth: Manijhi",
+      "description": "MSME minister Jitan Ram Manjhi says MSMEs are India’s second economic backbone after agriculture, contribute 31.1% to GDP, and get collateral-free loans.",
+      "url": "https://timesofindia.indiatimes.com/city/chennai/msmes-are-2nd-backbone-of-indias-economic-growth-manijhi/articleshow/132292030.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-132292028,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "publishedAt": "2026-07-09T15:48:46Z",
+      "content": "Follow Us On Social Media\r\nPatients kin accuse DMCH of administering blood of wrong group, hosp denies claimTunnel project ignored key green safeguardsThis content creator says you don't need to quit… [+1234 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "etimes.in",
+      "title": "Muskaan Bamne from Pushpa Impossible: There was complete trust between us and that helped us perform the slap scene",
+      "description": "Pushpa Impossible features an intense scene where Pushpa slaps Shanaya during a heated argument. Overcome with guilt, Pushpa then registers a case against herself at the police station. Actress Karuna Pandey expressed apprehension about filming the slap, ensu…",
+      "url": "https://timesofindia.indiatimes.com/tv/news/hindi/muskaan-bamne-from-pushpa-impossible-there-was-complete-trust-between-us-and-that-helped-us-perform-the-slap-scene/articleshow/132291351.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-132291835,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "publishedAt": "2026-07-09T15:47:36Z",
+      "content": "\u003Cul\u003E\u003Cli\u003ENews\u003C/li\u003E\r\n\u003Cli\u003Etv\u003C/li\u003E\r\n\u003Cli\u003EMuskaan Bamne from Pushpa Impossible: There was complete trust between us and that helped us perform the slap scene\u003C/li\u003E\u003C/ul\u003E\r\nFollow Us On Social Media\r\nPatients … [+1397 chars]"
+    }
+]
+}
