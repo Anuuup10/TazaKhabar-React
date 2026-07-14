@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
+import Spinner from './Spinner';
 
 export class News extends Component {
 
@@ -15,42 +16,50 @@ export class News extends Component {
   }
 
   async componentDidMount(){
-    let url = "https://newsapi.org/v2/everything?q=apple&from=2026-07-10&to=2026-07-10&sortBy=popularity&apiKey=c7d24296200441ec9cfb25d2488ede28&page=1&pageSize=20";
+    let url = `https://newsapi.org/v2/everything?q=apple&from=2026-07-10&to=2026-07-10&sortBy=popularity&apiKey=c7d24296200441ec9cfb25d2488ede28&page=1&pageSize=${this.props.pageSize}`;
+    this.setState({loading: true});
     let data = await fetch(url);
     let parsedData = await data.json();
-    this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults})
+    this.setState({
+      articles: parsedData.articles, 
+      totalResults: parsedData.totalResults,
+      loading: false
+    })
   }
   
   handlePrevClick = async () => {
-      let url = `https://newsapi.org/v2/everything?q=apple&from=2026-07-10&to=2026-07-10&sortBy=popularity&apiKey=c7d24296200441ec9cfb25d2488ede28&page=${this.state.page - 1}&pageSize=20`;
+      let url = `https://newsapi.org/v2/everything?q=apple&from=2026-07-10&to=2026-07-10&sortBy=popularity&apiKey=c7d24296200441ec9cfb25d2488ede28&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
+      this.setState({loading: true});
       let data = await fetch(url);
       let parsedData = await data.json();
       this.setState({
         page: this.state.page - 1,
-        articles: parsedData.articles
+        articles: parsedData.articles,
+        loading: false
       })
   }
 
   handleNextClick = async () => {
-    if(this.state.page + 1 > Math.ceil(this.state.totalResults/20)){
-
-    }else{
-      let url = `https://newsapi.org/v2/everything?q=apple&from=2026-07-10&to=2026-07-10&sortBy=popularity&apiKey=c7d24296200441ec9cfb25d2488ede28&page=${this.state.page + 1}&pageSize=20`;
+    if(!(this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize))){
+      let url = `https://newsapi.org/v2/everything?q=apple&from=2026-07-10&to=2026-07-10&sortBy=popularity&apiKey=c7d24296200441ec9cfb25d2488ede28&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+      this.setState({loading: true});
       let data = await fetch(url);
       let parsedData = await data.json();
       this.setState({
         page: this.state.page + 1,
-        articles: parsedData.articles
+        articles: parsedData.articles,
+        loading: false
       })
-    } 
+    }
   }
 
   render() {
     return (
       <div className='container my-3'>
-        <h1>NewsMonkey - Top Headlines</h1>
+        <h1 className="text-center">NewsMonkey - Top Headlines</h1>
+        {this.state.loading && <Spinner/>}
           <div className="row">
-             {this.state.articles.map((element)=>{
+             {!this.state.loading && this.state.articles.map((element)=>{
           return(
             <div className="col-md-4" key={element.url}>
               <NewsItem title={element.title?element.title:""} description={element.description?element.description:""} imageUrl={element.urlToImage} newsUrl={element.url}/>
